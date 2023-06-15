@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<title>Рецепты настроения</title>
+<link rel=" preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+<head>
+    <style>
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Pacifico', cursive;
+            color: darkorchid;
+        }
+    </style>
+    <h1>Рецепт хорошего настроения</h1>
+    <hr size="10px" color="darkorchid">
+</head>
+
+<body>
+    <img src="birdhp.jpg" alt="птица счастья">
+    <style>
+        img {
+            float: right;
+            border: 3px solid darkorchid;
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        h3,
+        p,
+        li {
+            font-family: 'Lobster', cursive;
+        }
+    </style>
+    <h3>Итак приступим:</h3>
+    <ol type="I">
+        <li>Берём день и хорошо очищаем его от зависти, ненависти, огорчений, жадности, упрямства, эгоизма, равнодушия.
+        </li>
+        <li>Добавляем три полные (с верхом) ложки оптимизма, большую горсть веры, ложечку терпения, несколько зёрен
+            терпимости, и, наконец, щепотку вежливости и порядочности по отношению ко всем и, в основном, к ближним.
+        </li>
+        <li>Всю получившуюся смесь заливаем сверху <a
+                href="https://ru.wikipedia.org/wiki/%D0%9B%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C">ЛЮБОВЬЮ!</a></li>
+        <li>Теперь, когда блюдо готово, украшаем его лепестками цветов доброты и внимания. Подавать ежедневно с гарниром
+            из тёплых слов и сердечных улыбок, согревающих сердце и душу.</li>
+    </ol>
+    <p id="change" onclick="clickColor()">Подробнее:</p>
+    <ul>
+        <li>Состав: Натуральный препарат содержит 100% любви.</li>
+
+        <li>Показания к применению: Для поднятия настроения, восполнения энергии и сил.</li>
+
+        <li>Способ применения: Принимать по утрам каждый день и можно на ночь, не зависимо от приема пищи!</li>
+
+        <li>Доза: Не ограничена!</li>
+
+        <li>Противопоказания: Отсутствуют!</li>
+
+        <li>Побочные явления: В 100% случаев появляется заряд бодрости и энергии.</li>
+
+        <li>Срок годности: Не ограничен!</li>
+
+        <li>Принимайте с удовольствием!</li>
+    </ul>
+    <script language="Javascript">
+        let a = prompt("Как тебя зовут?")
+        function writeMessage(a) {
+            return alert(`Добро пожаловать ${a}`);
+        }
+        writeMessage(a);
+        let age = parseInt(prompt("Сколько вам лет?"));
+        switch (age) {
+            case 18:
+                alert("Ага вам 18,наш сайт вам тоже подходит!:)");
+                break;
+            case 35:
+                alert("Люди вашего возраста часто нуждаются в поднятии настроения:)");
+                break;
+            case 65:
+                alert("Желаем вам здовья и еще долгих лет в хорошем настроение :) ");
+                break;
+            default:
+                alert("Неважно какой у вас возраст всем нужен позитив!");
+        }
+    </script>
+    <script language="Javascript">
+        function clickColor() {
+            d = document.getElementById('change');
+            if (d.style.color = 'black') {
+                d.style.color = 'red';
+            }
+
+            console.log(d.style.color);
+        }
+    </script>
+</body>
